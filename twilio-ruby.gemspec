@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   end
   spec.add_dependency('jwt', '~> 1.5')
   spec.add_dependency('faraday', '~>0.9')
-  spec.add_dependency('jruby-openssl') if RUBY_PLATFORM == 'java'
+  spec.add_dependency('jruby-openssl', '~> 0.9.6') if RUBY_PLATFORM == 'java'
   # Workaround for RBX <= 2.2.1, should be fixed in next version
   spec.add_dependency('rubysl') if defined?(RUBY_ENGINE) && RUBY_ENGINE == 'rbx'
 
